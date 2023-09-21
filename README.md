@@ -7,7 +7,7 @@ Badge [source](https://shields.io/)
 
 ## Problem Statement
 - What determines the value of a house? Square footage should be the first topic of discussion for the price of a house, then sequentially the number of bedrooms, bathrooms, etc. In ecommerce, these factors are the first things that potential homeowners or renters are first exposed to. Land value can also be a significant factor for the price of a house. 
-- Consequently, we need to determine if the sales price and its relationship to square footage depends on which neighborhood that the house is located in.
+- Consequently, we need to determine if the sales price (and its relationship to square footage) depends on which neighborhood that the house is located in.
 
 ## Key Findings:
 
