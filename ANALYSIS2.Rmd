@@ -612,7 +612,7 @@ press(model_forward)
 #predict(model_forward, newdata = df_test)
 ```
 
-```{r, eval=FALSE, echo=FALSE}
+```{r, eval=FALSE}
 #Doing the prediction on partitioned test set
 prediction = predict(model_forward, newdata = df_test)
 
@@ -641,7 +641,7 @@ Adjusted R-Squared=0.9162
 Kaggle RMSE=0.13700
 CV Press=19.45764
 
-```{r, eval=FALSE, echo=FALSE}
+```{r, eval=FALSE}
 # Applying backward variable selection method
 backward.var=stepAIC(fit.analysis2.model,direction = "backward")
 backward.var$anova
@@ -703,7 +703,7 @@ Adjusted R-Squared=0.9162
 Kaggle RMSE=0.13926
 CV Press=19.0847
 
-```{r, eval=FALSE, echo=FALSE}
+```{r, eval=FALSE}
 # Applying stepwise variable selection method
 stepwise.var=stepAIC(fit.analysis2.model,direction = "both")
 stepwise.var$anova
@@ -767,7 +767,7 @@ Adjusted R-Squared=0.8568
 Kaggle RMSE=0.13926
 CV Press=34.379
 
-```{r, eval=FALSE, echo=FALSE}
+```{r}
 # Generating the  custom model
 custom.model=lm(log(SalePrice) ~ Neighborhood+GarageCars+SaleCondition+RoofStyle+CentralAir+Fireplaces+
                 X1stFlrSF*X2ndFlrSF+ScreenPorch+BsmtFinSF1*BsmtFinSF2+KitchenQual+BsmtFullBath*BsmtHalfBath+
@@ -814,7 +814,7 @@ write.csv(output.df_train, file="C:/Users/dnguy/Desktop/3 Statistical Foundation
 
 ```
 
-```{r, eval=FALSE, echo=FALSE}
+```{r}
 ####Analysis 2 EDA####
 plot_histogram(A2Data[,2:79])
 ```
